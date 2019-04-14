@@ -37,10 +37,10 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   input = input.to.i 
-  if input > 1 && input < 9
+  if input >= 1 && input =< 9
     input = input - 1 
   elsif while !(input > 1 && input < 9)
-    input = gets.strip
+    turn(board)
   end
 end
    
