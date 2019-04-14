@@ -41,7 +41,6 @@ def turn(board)
     input = input - 1 
   else 
     turn(board)
-  end
 end
    
   
