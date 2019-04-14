@@ -39,7 +39,7 @@ def turn(board)
   input = input.to.i 
   if input.between(0, 8)
     input = input - 1 
-  else while !(input > 1 && input < 9)
+  else 
     turn(board)
   end
 end
